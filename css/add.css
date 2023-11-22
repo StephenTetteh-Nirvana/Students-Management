@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+:root{
+    --box-shadow:rgba(0,0,0,0.16) 0px 1px 4px;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Poppins','sans-serif';
+    list-style: none;
+}
+
+main{
+   background-color:#F5F7FA;
+   min-height:100vh;
+}
+
+.heading{
+   text-align:center;
+}
+.heading .title{
+   font-size:40px;
+   font-weight:500;
+}
+.heading .subtitle{
+    font-size:20px;
+    font-weight:300;
+}
+.form-box{
+    width:400px;
+    background-color:#FFFFFF;
+    box-shadow:var(--box-shadow);
+    padding:30px;
+    margin:auto;
+    margin-top:50px;
+}
+.form{
+    display:flex;
+    flex-direction:column;
+}
+.form input{
+    margin-top:10px;
+}
+.form input[type="text"]{
+    padding:10px;
+    border-radius:3px;
+    outline:none;
+    appearance:none;
+    border:1px solid grey;
+}
+.form input[type="date"]{
+    padding:10px;
+    border-radius:3px;
+    outline:none;
+    appearance:none;
+    border:1px solid grey;
+}
+.form input[type="submit"]{
+    padding:5px;
+    background-color:#2666CF;
+    color:white;
+    font-size:16px;
+    border:none;
+    border-radius:3px;
+    cursor: pointer;
+}
+.student-heading{
+   display: flex;
+   justify-content: space-around;
+  border-bottom:2px solid black;
+}
+.students-list{
+    text-align:center;
+}
+.students-list h1{
+    margin-top:50px;
+    font-size:40px;
+    text-decoration: underline;
+}
+.students-display{
+    background-color: #FFFFFF;
+    box-shadow: var(--box-shadow);
+    min-height:50vh;
+}
+.student-info{
+    margin-top:10px;
+}
+.student{
+    display:flex;
+    justify-content: space-around;
+    border-bottom:1px solid grey;
+    padding:10px;
+    row-gap: 20px;
+}

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --box-shadow:rgba(0,0,0,0.16) 0px 1px 4px;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    text-decoration:none;
+    list-style: none;
+    font-family: 'Poppins','sans-serif';
+}
+
+main{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+}
+.outer-wrap{
+    background-color: #FFFFFF;
+    min-height: 100vh;
+}
+.inner-wrap{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    padding:30px;
+}
+.heading{
+    margin-top:30px;
+    padding:0px 10px;
+}
+.heading h1{
+    margin-left:30px;
+    font-size:40px;
+    border-bottom:1px solid grey;
+}
+a{
+    color:black;
+}
+/* .index .active{
+    background-color:#2666CF;
+    color:white;
+} */
+.add-student,.edit-student,.delete-student,.student-details,.report-student{
+    background-color:#F5F7FA;
+    height:250px;
+    width:300px;
+    box-shadow: var(--box-shadow);
+    position:relative;
+}.add-student:hover,.edit-student:hover,.delete-student:hover,.student-details:hover,.report-student:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.add-student{
+    background-color:#65C18C;
+    border-radius:5px;
+    color:#FFFFFF;
+    opacity: 0.5;
+}
+.edit-student{
+    background-color: #2666CF;
+    border-radius:5px;
+    color:#FFFFFF;
+    opacity: 0.5;
+}
+.student-details{
+    background-color: yellow;
+    border-radius:5px;
+    color:#FFFFFF;
+    opacity: 0.5;
+}
+.delete-student{
+    background-color:red;
+    border-radius:5px;
+    color:#FFFFFF;
+    opacity: 0.5;
+}
+.report-student{
+    background-color:orangered;
+    border-radius:5px;
+    color:#FFFFFF;
+    opacity: 0.5;
+}
+.inside-content{
+    position:absolute;
+    top:50%;
+    left:60%;
+    transform:translate(-50%,-50%);
+    width:250px;
+}
+.inside-content img{
+    width:60px;
+    margin-left:55px;
+}
+.inside-content h3{
+    font-size:27px;
+    margin-top:5px;
+    width:100%;
+}
+.sidebar .logo-section{
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../images/image1.jpg);
+    background-repeat: none;
+    background-size:cover;
+    background-position: center;
+    height:250px;
+    margin-top:10px;
+    border-radius:0px 20px 20px 0px;
+    position:relative;
+}
+.sidebar .logo-section .center-text{
+    color:white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%); 
+    width:250px;
+}
+.navigation-links{
+    margin-top:10px;
+}
+.navigation-links li{
+    display:flex;
+    padding:12px 0px;
+    border-bottom:1px solid #F5F7FA;
+}
+.navigation-links li:hover{
+    background-color:#bbbec4;
+}
+.navigation-links li img{
+    margin-left:20px;
+    width:30px;
+}
+.navigation-links li p{
+    font-size:20px;
+    margin-left:20px;
+}
