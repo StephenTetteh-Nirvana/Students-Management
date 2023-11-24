@@ -16,11 +16,11 @@ form.addEventListener("submit",event=>{
     students.push(student)
     form.reset()
     localStorage.setItem("students",JSON.stringify(students))
-    addStudentDom(student.studentId,student.studentName,student.studentLevel,student.studentContact,student.studentDate)
+    addStudentDom(student.studentId,student.studentName,student.studentLevel,student.studentDate,student.studentContact)
 })
 
 function addStudentDom(id,name,level,date,contact){
-    studentInfo.innerHTML += `<li class="student">
+    studentInfo.innerHTML += `<li data-id="${id}" class="student">
                                 <p>${id}</p>
                                 <p>${name}</p>
                                 <p>${level}</p>
@@ -36,7 +36,7 @@ function loadStudents(){
     }else{
         allStudents.forEach((student)=>{
             console.log(student)
-            studentInfo.innerHTML += `<li class="student">
+            studentInfo.innerHTML += `<li data-id=${student.studentId} class="student">
                                        <p>${student.studentId}</p>
                                        <p>${student.studentName}</p>
                                        <p>${student.studentLevel}</p>

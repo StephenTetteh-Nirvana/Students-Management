@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <link rel="stylesheet" href="./css/edit.css"/>
+</head>
+<body>
+    <main>
+        <section class="heading">
+           <p class="title">Edit Student</p>
+           <p class="subtitle">Edit student details and update the students list</p>
+        </section>
+
+        <section class="form-box">
+             <form class="form">
+                <h1>Edit Student</h1>
+                <input type="text" placeholder="Enter Student Name" autocomplete="off" name="studentName" required/>
+                <input type="text" placeholder="Enter Student Level" name="level" autocomplete="off" required/>
+                <input type="text" placeholder="Enter Contact Details" name="contact" autocomplete="off" required/>
+                <input type="date" name="date" required/>
+                <button>Done</button>
+             </form>
+        </section>
+
+        <section class="students-list">
+            <h1>Students List</h1>
+            <div class="students-display">
+                <ul class="student-heading">
+                    <li>Student Id</li>
+                    <li>Name</li>
+                    <li>Student Level</li>
+                    <li>Date Of Birth</li>
+                    <li>Contact Details</li>
+                    <li>Actions</li>
+                </ul>
+                <ul class="student-info">
+                </ul> 
+            </div>
+        </section>
+    </main>
+    <script src="./editStudent.js"></script>
+</body>
+</html>
